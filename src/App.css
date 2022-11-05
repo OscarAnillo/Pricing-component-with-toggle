@@ -96,6 +96,7 @@
   text-transform: uppercase;
   width: 90%;
   margin-bottom: 1em;
+  transition: all .3s;
 }
 .blue-card {
   background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
@@ -110,4 +111,70 @@
 .blue-card button {
   background: #fff;
   color: rgb(108, 107, 200);
+  transition: all .3s;
+}
+.bg-bottom {
+  display: none;
+}
+
+@media(min-width: 1055px) {
+  .App {
+    overflow: hidden;
+  }
+  .container {
+    width: 90%;
+    max-width: 1055px;
+    margin: auto;
+    left: 22%;
+  }
+  .bg {
+    background-image: url("/public/images/bg-top.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    top: 0px;
+    right: -37%;
+    height: 900px;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .main-card-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card {
+    width: 350px;
+  }
+  .card button:hover {
+    background: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+    color: rgb(114, 113, 191);
+  }
+  .blue-card {
+    height: 500px;
+  }
+  .blue-card button:hover {
+    background: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #fff;
+  }
+  .blue-card h2 {
+    padding-top: 1.54em;
+  }
+  .bg-bottom {
+    display: block;
+    background-image: url("/public/images/bg-bottom.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 480px;
+    position: absolute;
+    top: 500px;
+    left: -420px;
+    width: 560px;
+  }
 }
