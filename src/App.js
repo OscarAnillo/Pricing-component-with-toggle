@@ -18,6 +18,7 @@ function App() {
           <h1 className='pricing-title'>Our Pricing</h1>
           <SwitchComponent changeHandler={changeHandler} />
           <MainCard plan={plan} />
+          <div className='bg-bottom'></div>
         </div>
     </div>
   );
