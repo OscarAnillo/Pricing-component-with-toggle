@@ -96,6 +96,7 @@
   text-transform: uppercase;
   width: 90%;
   margin-bottom: 1em;
+  transition: all .3s;
 }
 .blue-card {
   background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
@@ -110,6 +111,7 @@
 .blue-card button {
   background: #fff;
   color: rgb(108, 107, 200);
+  transition: all .3s;
 }
 .bg-bottom {
   display: none;
@@ -146,8 +148,20 @@
   .card {
     width: 350px;
   }
+  .card button:hover {
+    background: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+    color: rgb(114, 113, 191);
+  }
   .blue-card {
     height: 500px;
+  }
+  .blue-card button:hover {
+    background: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #fff;
   }
   .blue-card h2 {
     padding-top: 1.54em;
