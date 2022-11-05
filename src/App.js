@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import SwitchComponent from './Components/switch-component';
-import './App.css';
 import MainCard from './Components/main-card';
+import 'animate.css';
+import './App.css';
 
 function App() {
   const [plan, setPlan] = useState("anually");
@@ -12,7 +13,7 @@ function App() {
 
   console.log(plan);
   return (
-    <div className="App">
+    <div className="App animate__animated animate__fadeIn">
       <div className='bg'></div>
         <div className='container'>
           <h1 className='pricing-title'>Our Pricing</h1>
