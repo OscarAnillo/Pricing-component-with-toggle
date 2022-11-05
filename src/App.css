@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,4 +7,107 @@
 
 .App {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: hsl(240, 78%, 98%);
+  min-height: 100vh;
+  position: relative;
+}
+.bg {
+  background-image: url("/public/images/bg-top.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  position: relative;
+  top: -30px;
+  right: -190px;
+  height: 650px;
+  width: 100%;
+  z-index: 1;
+}
+
+.container {
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  margin: auto;
+  z-index: 2;
+}
+
+.pricing-title {
+  color: hsl(233, 13%, 49%);
+  font-weight: 700;
+  padding: 2.3em 0 1.5em 0;
+}
+
+/* SwitchComponent */
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5.3em;
+}
+.switch p {
+  color: hsl(234, 14%, 74%);
+  margin: 0em 1em;
+}
+
+/* MainCard */
+.card {
+  border-radius: 6px;
+  box-shadow: 3px 3px 8px rgb(190, 190, 190);
+  background-color: #fff;
+  margin-bottom: 2em;
+  padding: 1em 0;
+  z-index: 99;
+}
+.card h2 {
+  color: hsl(233, 13%, 49%);
+  padding-bottom: 1.299em;
+}
+.card h1 {
+  font-size: 4rem;
+  padding-bottom: .65em;
+}
+.card > div {
+  border: none;
+  border-top: 1px solid #eee;
+  padding: 1em 0;
+  width: 90%;
+  margin: auto;
+  color: hsl(233, 13%, 49%);
+}
+.card > div:nth-child(5) {
+  border: none;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 2em;
+} 
+.card button {
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 1em;
+  text-transform: uppercase;
+  width: 90%;
+  margin-bottom: 1em;
+}
+.blue-card {
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: #fff;
+}
+.blue-card h2 {
+  color: #fff;
+}
+.blue-card > div {
+  color: #fff;
+}
+.blue-card button {
+  background: #fff;
+  color: rgb(108, 107, 200);
 }
